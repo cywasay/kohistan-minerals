@@ -9,7 +9,7 @@ export default function Contact() {
       className="py-24 bg-[#0a0a0a] text-white overflow-hidden relative"
       id="contact"
     >
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto bg-[#141414] rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Contact Info */}

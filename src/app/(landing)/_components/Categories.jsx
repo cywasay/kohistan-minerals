@@ -49,7 +49,7 @@ const categories = [
 export default function Categories() {
   return (
     <section className="py-24 bg-[#0a0a0a] text-white">
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

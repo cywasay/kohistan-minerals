@@ -15,11 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} antialiased bg-black overflow-x-hidden`}
+        className={`${outfit.variable} antialiased bg-[#0a0a0a] overflow-x-hidden`}
       >
-        <div className="max-w-7xl mx-auto shadow-2xl relative bg-[#0a0a0a]">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

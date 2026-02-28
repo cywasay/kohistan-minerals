@@ -22,9 +22,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`absolute top-0 left-0 w-full z-50 transition-all duration-500 ${navStyles}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${navStyles}`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-10 h-10 bg-[#CA7A7B] rounded-xl flex items-center justify-center font-bold text-white text-xl">
             K
