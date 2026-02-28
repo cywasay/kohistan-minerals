@@ -1,8 +1,8 @@
-import { Outfit } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} antialiased bg-white overflow-x-hidden`}
+        className={`${nunitoSans.className} antialiased bg-white overflow-x-hidden`}
       >
         {children}
       </body>
