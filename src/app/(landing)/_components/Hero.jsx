@@ -74,9 +74,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      {/* Decorative Gradient - Transition to White */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent z-10" />
     </section>
   );
 }
