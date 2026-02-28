@@ -20,7 +20,7 @@ export default function AboutHero() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 leading-tight">
               A Trusted Partner in <br />
               <span className="text-[#CA7A7B]">Himalayan Excellence</span>
             </h1>

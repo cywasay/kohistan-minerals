@@ -104,26 +104,28 @@ export default function AboutProducts() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-10 rounded-[2.5rem] border border-black/5 hover:border-[#CA7A7B]/20 shadow-xl shadow-black/[0.02] flex flex-col h-full group transition-all"
+              className="bg-white p-8 rounded-[2rem] border border-black/5 hover:border-[#CA7A7B]/20 shadow-xl shadow-black/[0.02] flex flex-col h-full group transition-all"
             >
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-[#CA7A7B]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#CA7A7B]/10 transition-colors">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 bg-[#CA7A7B]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#CA7A7B]/10 transition-colors">
                   {product.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-black group-hover:text-[#CA7A7B] transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-black group-hover:text-[#CA7A7B] transition-colors leading-tight">
                   {product.title}
                 </h3>
               </div>
 
-              <div className="space-y-6 flex-grow">
-                <p className="text-black/70 font-medium">{product.content}</p>
+              <div className="space-y-4 flex-grow">
+                <p className="text-black/70 font-medium text-sm md:text-base">
+                  {product.content}
+                </p>
 
                 {product.points && (
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {product.points.map((point) => (
                       <li
                         key={point}
-                        className="flex items-start gap-3 text-black/60"
+                        className="flex items-start gap-3 text-black/60 text-sm"
                       >
                         <div className="w-1.5 h-1.5 mt-2 rounded-full bg-[#CA7A7B]/40 shrink-0" />
                         <span>{point}</span>
@@ -155,16 +157,16 @@ export default function AboutProducts() {
                 )}
 
                 {product.formats && (
-                  <div className="bg-[#F8F8F8] p-4 rounded-2xl border border-black/5">
-                    <p className="text-black/60 text-sm leading-relaxed italic">
+                  <div className="bg-[#F8F8F8] p-3 rounded-xl border border-black/5">
+                    <p className="text-black/60 text-xs leading-relaxed italic">
                       {product.formats}
                     </p>
                   </div>
                 )}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-black/5">
-                <p className="text-black/50 text-sm leading-relaxed">
+              <div className="mt-6 pt-4 border-t border-black/5">
+                <p className="text-black/50 text-xs leading-relaxed">
                   {product.extra || product.usage || product.target}
                 </p>
               </div>

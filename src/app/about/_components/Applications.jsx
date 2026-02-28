@@ -63,14 +63,14 @@ export default function Applications() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-[#F8F8F8] p-8 rounded-[2rem] border border-black/5 hover:border-[#CA7A7B]/30 hover:shadow-xl hover:shadow-black/[0.02] transition-all group"
+                className="bg-[#F8F8F8] p-6 rounded-3xl border border-black/5 hover:border-[#CA7A7B]/30 hover:shadow-xl hover:shadow-black/[0.02] transition-all group"
               >
-                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#CA7A7B] group-hover:text-white transition-all shadow-sm border border-black/5">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#CA7A7B] group-hover:text-white transition-all shadow-sm border border-black/5">
                   <div className="text-[#CA7A7B] group-hover:text-white">
                     {app.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-black leading-tight">
+                <h3 className="text-lg font-bold text-black leading-tight">
                   {app.title}
                 </h3>
               </motion.div>
