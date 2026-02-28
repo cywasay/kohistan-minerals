@@ -1,0 +1,86 @@
+"use client";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      setIsScrolled(latest > 50);
+    });
+  }, [scrollY]);
+
+  const navStyles = isScrolled
+    ? "bg-black/80 backdrop-blur-xl border-b border-white/10 py-4"
+    : "bg-transparent py-6";
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${navStyles}`}
+    >
+      <div className="container mx-auto px-6 flex justify-between items-center">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="w-10 h-10 bg-[#CA7A7B] rounded-xl flex items-center justify-center font-bold text-white text-xl">
+            K
+          </div>
+          <span className="text-2xl font-bold text-white tracking-tighter">
+            KOHISTAN<span className="text-[#CA7A7B]">MINERALS</span>
+          </span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-10">
+          {["Home", "Products", "Mining", "Wellness", "Contact"].map((item) => (
+            <Link
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-white/70 hover:text-[#CA7A7B] text-sm font-medium tracking-wide transition-colors"
+            >
+              {item}
+            </Link>
+          ))}
+          <button className="px-6 py-2.5 bg-[#CA7A7B] text-white rounded-full text-sm font-bold hover:bg-[#b8696a] transition-all shadow-lg shadow-[#CA7A7B]/10">
+            Get Quote
+          </button>
+        </div>
+
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="md:hidden absolute top-full left-0 w-full bg-black border-b border-white/10 p-6 flex flex-col gap-6"
+        >
+          {["Home", "Products", "Mining", "Wellness", "Contact"].map((item) => (
+            <Link
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-white/70 text-lg font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              {item}
+            </Link>
+          ))}
+          <button className="w-full py-4 bg-[#CA7A7B] text-white rounded-2xl font-bold">
+            Get Quote
+          </button>
+        </motion.div>
+      )}
+    </nav>
+  );
+}
