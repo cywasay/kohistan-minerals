@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${navStyles}`}
+      className={`absolute top-0 left-0 w-full z-50 transition-all duration-500 ${navStyles}`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
