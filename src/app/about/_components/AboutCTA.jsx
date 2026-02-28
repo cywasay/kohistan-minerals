@@ -36,17 +36,16 @@ export default function AboutCTA() {
               </span>
             </h2>
 
-            <p className="text-white/80 text-xl font-medium mb-12 max-w-2xl mx-auto leading-relaxed">
-              Join our network of global distributors and industrial partners.
-              Let's discuss how we can support your business with premium
-              quality Himalayan minerals and reliable supply chains.
+            <p className="text-white/80 text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto leading-relaxed">
+              Partner with Kohistan Minerals for high-quality Himalayan salt
+              products backed by structured export support and global logistics.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-10 py-5 bg-white text-[#CA7A7B] border-2 border-white rounded-full font-bold flex items-center justify-center gap-2 hover:bg-transparent hover:text-white transition-all shadow-xl shadow-black/10 group"
+                className="px-10 py-5 bg-white text-[#CA7A7B] border-2 border-white rounded-full font-extrabold flex items-center justify-center gap-2 hover:bg-transparent hover:text-white transition-all shadow-xl shadow-black/10 group"
               >
                 Request a Quote
                 <ArrowRight
@@ -58,9 +57,9 @@ export default function AboutCTA() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-10 py-5 bg-transparent border-2 border-white text-white rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/10 transition-all group"
+                className="px-10 py-5 bg-transparent border-2 border-white text-white rounded-full font-extrabold flex items-center justify-center gap-2 hover:bg-white/10 transition-all group"
               >
-                View Catalog
+                Contact Our Sales Team
               </motion.button>
             </div>
           </div>

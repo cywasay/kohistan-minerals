@@ -136,10 +136,10 @@ export default function AboutProducts() {
 
                 {product.variants && (
                   <div>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-[#CA7A7B] mb-2">
-                      Variants
+                    <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#CA7A7B] mb-1.5">
+                      Variants include
                     </span>
-                    <p className="text-black/60 leading-relaxed">
+                    <p className="text-black/60 text-sm leading-relaxed italic">
                       {product.variants}
                     </p>
                   </div>
@@ -147,10 +147,10 @@ export default function AboutProducts() {
 
                 {product.sizes && (
                   <div>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-[#CA7A7B] mb-2">
-                      Sizes
+                    <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#CA7A7B] mb-1.5">
+                      Available sizes
                     </span>
-                    <p className="text-black/60 leading-relaxed">
+                    <p className="text-black/60 text-sm leading-relaxed italic">
                       {product.sizes}
                     </p>
                   </div>
@@ -158,6 +158,9 @@ export default function AboutProducts() {
 
                 {product.formats && (
                   <div className="bg-[#F8F8F8] p-3 rounded-xl border border-black/5">
+                    <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#CA7A7B] mb-1">
+                      Available in
+                    </span>
                     <p className="text-black/60 text-xs leading-relaxed italic">
                       {product.formats}
                     </p>
@@ -166,6 +169,9 @@ export default function AboutProducts() {
               </div>
 
               <div className="mt-6 pt-4 border-t border-black/5">
+                <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#CA7A7B] mb-2">
+                  Suitable for
+                </span>
                 <p className="text-black/50 text-xs leading-relaxed">
                   {product.extra || product.usage || product.target}
                 </p>
