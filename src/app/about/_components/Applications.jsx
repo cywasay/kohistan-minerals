@@ -6,7 +6,7 @@ import {
   Utensils,
   Droplets,
   ShoppingBag,
-  Spa,
+  Sparkles,
   Home,
   TreePine,
 } from "lucide-react";
@@ -20,7 +20,7 @@ export default function Applications() {
     },
     { title: "Water Treatment Facilities", icon: <Droplets size={24} /> },
     { title: "Retail & Private Label Brands", icon: <ShoppingBag size={24} /> },
-    { title: "Spa & Wellness Centers", icon: <Spa size={24} /> },
+    { title: "Spa & Wellness Centers", icon: <Sparkles size={24} /> },
     { title: "Construction & Interior Projects", icon: <Home size={24} /> },
     { title: "Agriculture & Livestock", icon: <TreePine size={24} /> },
   ];
