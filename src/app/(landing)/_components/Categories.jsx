@@ -48,7 +48,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="py-24 bg-[#0a0a0a] text-white">
+    <section className="py-24 bg-white text-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
@@ -77,7 +77,7 @@ export default function Categories() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-3xl bg-[#141414] border border-white/5 hover:border-[#CA7A7B]/30 transition-all cursor-pointer"
+              className="group relative overflow-hidden rounded-3xl bg-[#F8F8F8] border border-black/5 hover:border-[#CA7A7B]/30 transition-all cursor-pointer"
             >
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
@@ -96,7 +96,7 @@ export default function Categories() {
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-[#CA7A7B] transition-colors">
                   {cat.title}
                 </h3>
-                <p className="text-white/60 leading-relaxed mb-6">
+                <p className="text-black/60 leading-relaxed mb-6">
                   {cat.description}
                 </p>
                 <div className="flex items-center gap-2 text-[#CA7A7B] font-semibold opacity-0 group-hover:opacity-100 transition-opacity">

@@ -17,8 +17,14 @@ export default function Navbar() {
   }, [scrollY]);
 
   const navStyles = isScrolled
-    ? "bg-black/80 backdrop-blur-xl border-b border-white/10 py-4"
+    ? "bg-white/90 backdrop-blur-xl border-b border-black/5 py-4 shadow-sm"
     : "bg-transparent py-6";
+
+  const linkStyles = isScrolled
+    ? "text-black/70 hover:text-[#ca7a7b]"
+    : "text-white/80 hover:text-white";
+
+  const logoStyles = isScrolled ? "text-black" : "text-white";
 
   return (
     <nav
@@ -26,11 +32,13 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-[#CA7A7B] rounded-xl flex items-center justify-center font-bold text-white text-xl">
+          <div className="w-10 h-10 bg-[#ca7a7b] rounded-xl flex items-center justify-center font-bold text-white text-xl">
             K
           </div>
-          <span className="text-2xl font-bold text-white tracking-tighter">
-            KOHISTAN<span className="text-[#CA7A7B]">MINERALS</span>
+          <span
+            className={`text-2xl font-bold tracking-tighter transition-colors ${logoStyles}`}
+          >
+            KOHISTAN<span className="text-[#ca7a7b]">MINERALS</span>
           </span>
         </Link>
 
@@ -40,7 +48,7 @@ export default function Navbar() {
             <Link
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-white/70 hover:text-[#CA7A7B] text-sm font-medium tracking-wide transition-colors"
+              className={`text-sm font-medium tracking-wide transition-colors ${linkStyles}`}
             >
               {item}
             </Link>

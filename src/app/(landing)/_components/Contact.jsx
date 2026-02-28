@@ -6,11 +6,11 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 export default function Contact() {
   return (
     <section
-      className="py-16 md:py-24 bg-[#0a0a0a] text-white overflow-hidden relative"
+      className="py-16 md:py-24 bg-white text-black overflow-hidden relative"
       id="contact"
     >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="max-w-6xl mx-auto bg-[#141414] rounded-3xl md:rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
+        <div className="max-w-6xl mx-auto bg-[#F8F8F8] rounded-3xl md:rounded-[3rem] border border-black/5 overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Contact Info */}
             <div className="p-8 md:p-12 lg:p-16 bg-[#CA7A7B] text-white">
@@ -73,49 +73,49 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="p-8 md:p-12 lg:p-16">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-black">
                 Send a Message
               </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-white/40 text-sm mb-2 px-2">
+                    <label className="block text-black/40 text-sm mb-2 px-2">
                       First Name
                     </label>
                     <input
                       type="text"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all"
+                      className="w-full bg-white border border-black/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all text-black placeholder:text-black/20"
                       placeholder="John"
                     />
                   </div>
                   <div>
-                    <label className="block text-white/40 text-sm mb-2 px-2">
+                    <label className="block text-black/40 text-sm mb-2 px-2">
                       Last Name
                     </label>
                     <input
                       type="text"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all"
+                      className="w-full bg-white border border-black/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all text-black placeholder:text-black/20"
                       placeholder="Doe"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-white/40 text-sm mb-2 px-2">
+                  <label className="block text-black/40 text-sm mb-2 px-2">
                     Email Address
                   </label>
                   <input
                     type="email"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all"
+                    className="w-full bg-white border border-black/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all text-black placeholder:text-black/20"
                     placeholder="john@example.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-white/40 text-sm mb-2 px-2">
+                  <label className="block text-black/40 text-sm mb-2 px-2">
                     Subject
                   </label>
-                  <select className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all">
+                  <select className="w-full bg-white border border-black/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all text-black">
                     <option>Industrial Supply</option>
                     <option>Wellness Products</option>
                     <option>Culinary Salts</option>
@@ -124,12 +124,12 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-white/40 text-sm mb-2 px-2">
+                  <label className="block text-black/40 text-sm mb-2 px-2">
                     Your Message
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all"
+                    className="w-full bg-white border border-black/10 rounded-2xl p-4 focus:outline-none focus:border-[#CA7A7B] transition-all text-black placeholder:text-black/20"
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>

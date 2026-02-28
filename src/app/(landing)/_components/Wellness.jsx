@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Wellness() {
   return (
-    <section className="py-16 md:py-24 bg-[#0a0a0a] text-white">
+    <section className="py-16 md:py-24 bg-white text-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
@@ -16,7 +16,7 @@ export default function Wellness() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative z-10 rounded-3xl md:rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/5] h-[400px] md:h-[600px]">
+            <div className="relative z-10 rounded-3xl md:rounded-[2.5rem] overflow-hidden border border-black/5 aspect-[4/5] h-[400px] md:h-[600px]">
               <Image
                 src="/lamps.png"
                 alt="Wellness & Relaxation"
@@ -35,15 +35,15 @@ export default function Wellness() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
               viewport={{ once: true }}
-              className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl z-20 hidden md:block"
+              className="absolute bottom-10 right-10 bg-white/40 backdrop-blur-xl border border-black/5 p-6 rounded-3xl z-20 hidden md:block"
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-[#CA7A7B] rounded-full flex items-center justify-center">
                   <Sparkles className="text-white" size={24} />
                 </div>
                 <div>
-                  <p className="text-3xl font-bold">100%</p>
-                  <p className="text-white/60 text-sm">Natural Minerals</p>
+                  <p className="text-3xl font-bold text-black">100%</p>
+                  <p className="text-black/60 text-sm">Natural Minerals</p>
                 </div>
               </div>
             </motion.div>
@@ -66,7 +66,7 @@ export default function Wellness() {
               <span className="text-[#CA7A7B]">Natural Serenity</span>
             </h2>
 
-            <p className="text-white/60 text-base md:text-lg mb-10 md:mb-12 leading-relaxed">
+            <p className="text-black/60 text-base md:text-lg mb-10 md:mb-12 leading-relaxed">
               Our lifestyle products aren't just decor; they are wellness tools.
               From ion-releasing salt lamps that purify the air to mineral-rich
               spa salts that restore your skin's vitality.
@@ -74,12 +74,12 @@ export default function Wellness() {
 
             <div className="space-y-8">
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#1a1a1a] rounded-2xl flex items-center justify-center border border-white/5">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#F8F8F8] rounded-2xl flex items-center justify-center border border-black/5">
                   <Shield className="text-[#CA7A7B]" size={24} />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Authentic Source</h4>
-                  <p className="text-white/50">
+                  <p className="text-black/50">
                     Directly extracted from the deep veins of the Himalayan
                     ranges, ensuring 100% purity and mineral content.
                   </p>
@@ -87,14 +87,14 @@ export default function Wellness() {
               </div>
 
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#1a1a1a] rounded-2xl flex items-center justify-center border border-white/5">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#F8F8F8] rounded-2xl flex items-center justify-center border border-black/5">
                   <Leaf className="text-[#CA7A7B]" size={24} />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">
                     Eco-Friendly Crafting
                   </h4>
-                  <p className="text-white/50">
+                  <p className="text-black/50">
                     We prioritize sustainable mining practices and artisanal
                     hand-crafting for all our lifestyle products.
                   </p>

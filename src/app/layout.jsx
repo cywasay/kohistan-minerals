@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} antialiased bg-[#0a0a0a] overflow-x-hidden`}
+        className={`${outfit.variable} antialiased bg-white overflow-x-hidden`}
       >
         {children}
       </body>
