@@ -44,23 +44,29 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
-          {["Home", "Products", "Mining", "Wellness", "Contact"].map((item) => (
+          {[
+            { name: "Home", href: "/" },
+            { name: "About", href: "/about" },
+            { name: "Products", href: "/#products" },
+            { name: "Wellness", href: "/#wellness" },
+            { name: "Contact", href: "/#contact" },
+          ].map((item) => (
             <Link
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.name}
+              href={item.href}
               className={`text-sm font-medium tracking-wide transition-colors ${linkStyles}`}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
-          <button className="px-6 py-2.5 bg-[#CA7A7B] text-white rounded-full text-sm font-bold hover:bg-[#b8696a] transition-all shadow-lg shadow-[#CA7A7B]/10">
+          <button className="px-6 py-2.5 bg-[#ca7a7b] text-white rounded-full text-sm font-bold hover:bg-[#b8696a] transition-all shadow-lg shadow-[#ca7a7b]/10">
             Get Quote
           </button>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className={`md:hidden ${logoStyles}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -72,19 +78,25 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 w-full bg-black border-b border-white/10 p-6 flex flex-col gap-6"
+          className="md:hidden absolute top-full left-0 w-full bg-white border-b border-black/5 p-6 flex flex-col gap-6 shadow-2xl"
         >
-          {["Home", "Products", "Mining", "Wellness", "Contact"].map((item) => (
+          {[
+            { name: "Home", href: "/" },
+            { name: "About", href: "/about" },
+            { name: "Products", href: "/#products" },
+            { name: "Wellness", href: "/#wellness" },
+            { name: "Contact", href: "/#contact" },
+          ].map((item) => (
             <Link
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-white/70 text-lg font-medium"
+              key={item.name}
+              href={item.href}
+              className="text-black/80 text-lg font-bold hover:text-[#ca7a7b] transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
-          <button className="w-full py-4 bg-[#CA7A7B] text-white rounded-2xl font-bold">
+          <button className="w-full py-4 bg-[#ca7a7b] text-white rounded-2xl font-bold">
             Get Quote
           </button>
         </motion.div>

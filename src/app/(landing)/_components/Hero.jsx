@@ -33,14 +33,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1]">
+          <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold text-white mb-8 leading-[1.1]">
             Premium Himalayan Salt from Pakistan <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#CA7A7B]">
               Export & Bulk Supply
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/70 mb-8 max-w-3xl">
             We provide high-quality Himalayan salt products directly from source
             serving industries, food brands, wellness markets, and global
             distributors with consistent quality and reliable export services.
