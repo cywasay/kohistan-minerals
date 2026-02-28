@@ -6,14 +6,14 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 export default function Contact() {
   return (
     <section
-      className="py-24 bg-[#0a0a0a] text-white overflow-hidden relative"
+      className="py-16 md:py-24 bg-[#0a0a0a] text-white overflow-hidden relative"
       id="contact"
     >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="max-w-6xl mx-auto bg-[#141414] rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
+        <div className="max-w-6xl mx-auto bg-[#141414] rounded-3xl md:rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Contact Info */}
-            <div className="p-12 lg:p-16 bg-[#CA7A7B] text-white">
+            <div className="p-8 md:p-12 lg:p-16 bg-[#CA7A7B] text-white">
               <h2 className="text-4xl font-bold mb-8">
                 Ready to Partner with Us?
               </h2>
@@ -72,8 +72,10 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="p-12 lg:p-16">
-              <h3 className="text-3xl font-bold mb-8">Send a Message</h3>
+            <div className="p-8 md:p-12 lg:p-16">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8">
+                Send a Message
+              </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>

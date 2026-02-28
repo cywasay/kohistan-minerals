@@ -33,14 +33,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Pure From The <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#CA7A7B]">
               Himalayan Depths
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
             Extracting and refining the world's most pristine minerals. From
             gourmet culinary salts to architectural salt bricks, we bring the
             essence of nature to your doorstep.

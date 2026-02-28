@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function Wellness() {
   return (
-    <section className="py-24 bg-[#0a0a0a] text-white">
+    <section className="py-16 md:py-24 bg-[#0a0a0a] text-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -16,7 +16,7 @@ export default function Wellness() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/5] md:aspect-square lg:aspect-auto h-[600px]">
+            <div className="relative z-10 rounded-3xl md:rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/5] h-[400px] md:h-[600px]">
               <Image
                 src="/lamps.png"
                 alt="Wellness & Relaxation"
@@ -61,12 +61,12 @@ export default function Wellness() {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
               Elevate Your Space with <br />
               <span className="text-[#CA7A7B]">Natural Serenity</span>
             </h2>
 
-            <p className="text-white/60 text-lg mb-12 leading-relaxed">
+            <p className="text-white/60 text-base md:text-lg mb-10 md:mb-12 leading-relaxed">
               Our lifestyle products aren't just decor; they are wellness tools.
               From ion-releasing salt lamps that purify the air to mineral-rich
               spa salts that restore your skin's vitality.
