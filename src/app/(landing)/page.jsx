@@ -13,13 +13,13 @@ export const metadata = {
 
 export default function LandingPage() {
   return (
-    <main className="bg-[#0a0a0a] min-h-screen">
+    <main className="bg-[#0a0a0a] min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
-      <div id="products">
+      <div id="products" className="overflow-x-hidden">
         <Categories />
       </div>
-      <div id="wellness">
+      <div id="wellness" className="overflow-x-hidden">
         <Wellness />
       </div>
       <Contact />
